@@ -20,6 +20,10 @@ public class Employee {
     public Employee(String name){
         this.name = name;
     }
+    public Employee(String name, String id){
+        this.name = name;
+        this.id = id;
+    }
 
     public void performDuty(){
         System.out.println(name+ " performing duties");
