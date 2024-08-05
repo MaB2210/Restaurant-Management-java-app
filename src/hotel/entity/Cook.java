@@ -32,7 +32,7 @@ public class Cook extends Employee {
             System.out.println("Chef " + getName() + "is expert in " + getCuisine() + " Cuisine and is Food Safety Certified.");
         }
         else {
-            System.out.println("Chef " + getName() + "is expert in " + getCuisine() + " Cuisine But is not Food Safety Certified.");
+            System.out.println("Chef " + getName() + "is expert in " + getCuisine() + " Cuisine But is not  Food Safety Certified.");
         }
     }
 }
