@@ -8,6 +8,23 @@ public class Employee {
     private String age;
     private String gender;
 
+
+    public Employee(String id, String name, String sinNumber, String age, String gender){
+        this.id = id;
+        this.name = name;
+        this.sinNumber = sinNumber;
+        this.age = age;
+        this.gender = gender;
+    }
+
+    public Employee(String name){
+        this.name = name;
+    }
+
+    public void performDuty(){
+        System.out.println(name+ " performing duties");
+    }
+
     public String getId() {
         return id;
     }

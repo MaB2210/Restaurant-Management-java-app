@@ -1,14 +1,25 @@
 package hotel.entity;
 
-public class Manager {
+public class Manager extends Employee{
 
-    private String phoneNumber;
-
-    public String getPhoneNumber() {
-        return phoneNumber;
+    public Manager(String name, String managerPhoneNumber ){
+        super(name);
+        this.managerPhoneNumber = managerPhoneNumber;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    private String managerPhoneNumber;
+
+    public String getManagerPhoneNumber() {
+        return managerPhoneNumber;
     }
+
+    public void setManagerPhoneNumber(String phoneNumber) {
+        this.managerPhoneNumber = phoneNumber;
+    }
+
+    @Override
+    public void performDuty(){
+        System.out.println(this.getManagerPhoneNumber() + " is the phone number of Manager " + this.getName());
+    }
+
 }
