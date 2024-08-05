@@ -1,7 +1,7 @@
 package hotel.entity;
 
 public class Cook extends Employee {
-    public Cook(String name, String cuisine, boolean foodCertification){
+    public Cook (String name, String cuisine, boolean foodCertification){
         super(name);
         this.cuisine=cuisine;
         this.foodCertification=foodCertification;
