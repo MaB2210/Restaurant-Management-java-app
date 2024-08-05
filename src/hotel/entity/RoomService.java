@@ -1,13 +1,13 @@
 package hotel.entity;
 
 public class RoomService extends Employee {
-    public RoomService(String name,String id,boolean smartServeCertificate){
-        super(name,id);
-        this.smartServeCertificate = smartServeCertificate;
-    }
-
 
     private boolean smartServeCertificate;
+
+    public RoomService(String name,String id, String sinNumber, boolean smartServeCertificate){
+        super(name,id, sinNumber);
+        this.smartServeCertificate = smartServeCertificate;
+    }
 
     public boolean isSmartServeCertificate() {
         return smartServeCertificate;
@@ -19,11 +19,6 @@ public class RoomService extends Employee {
 
     @Override
     public void performDuty(){
-        if(smartServeCertificate == true){
-            System.out.println("Employee name " + this.getName() + " and ID " + this.getId() + " is Smart Serve Certified");
-        }
-        else{
-            System.out.println("Employee name " + this.getName() + " and ID " + this.getId() + " does not have Smart Serve Certification");
-        }
+        System.out.println("Room Service employee " + this.getName() +" cleaning the rooms.");
     }
 }

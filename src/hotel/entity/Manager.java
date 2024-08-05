@@ -2,8 +2,8 @@ package hotel.entity;
 
 public class Manager extends Employee{
 
-    public Manager(String name, String managerPhoneNumber ){
-        super(name);
+    public Manager(String name,String id, String sinNumber, String managerPhoneNumber ){
+        super(name, id, sinNumber);
         this.managerPhoneNumber = managerPhoneNumber;
     }
 
@@ -19,7 +19,7 @@ public class Manager extends Employee{
 
     @Override
     public void performDuty(){
-        System.out.println(this.getManagerPhoneNumber() + " is the phone number of Manager " + this.getName());
+        System.out.println("Manager " + this.getName() + " is managing the employees.");
     }
 
 }

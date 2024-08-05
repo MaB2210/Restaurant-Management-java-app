@@ -6,6 +6,7 @@ public class Guest {
     private String phoneNumber;
     private String Address;
     private String guestIdentificationProof;
+    private String guestRoomNumber;
 
     public String getName() {
         return name;
@@ -37,5 +38,13 @@ public class Guest {
 
     public void setGuestIdentificationProof(String guestIdentificationProof) {
         this.guestIdentificationProof = guestIdentificationProof;
+    }
+
+    public String getGuestRoomNumber() {
+        return guestRoomNumber;
+    }
+
+    public void setGuestRoomNumber(String guestRoomNumber) {
+        this.guestRoomNumber = guestRoomNumber;
     }
 }

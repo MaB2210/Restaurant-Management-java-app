@@ -1,7 +1,18 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import hotel.entity.Employee;
+import hotel.service.DutyService;
+import hotel.service.HireService;
+
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
 
+        HireService hireService = new HireService();
+
+        List<Employee> employees = hireService.HireAndProvideEmployees();
+
+        DutyService dutyService = new DutyService();
+
+        dutyService.performDutyService(employees);
     }
 }

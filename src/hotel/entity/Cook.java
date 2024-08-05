@@ -1,8 +1,8 @@
 package hotel.entity;
 
 public class Cook extends Employee {
-    public Cook (String name, String cuisine, boolean foodCertification){
-        super(name);
+    public Cook (String name, String id, String sinNumber, String cuisine, boolean foodCertification){
+        super(name, id, sinNumber);
         this.cuisine=cuisine;
         this.foodCertification=foodCertification;
     }
@@ -28,11 +28,6 @@ public class Cook extends Employee {
 
     @Override
     public void performDuty(){
-        if(foodCertification == true){
-            System.out.println("Chef " + getName() + "is expert in " + getCuisine() + " Cuisine and is Food Safety Certified.");
-        }
-        else {
-            System.out.println("Chef " + getName() + "is expert in " + getCuisine() + " Cuisine But is not  Food Safety Certified.");
-        }
+        System.out.println("Cook " +this.getName()+" is cooking " +this.cuisine+" food.");
     }
 }

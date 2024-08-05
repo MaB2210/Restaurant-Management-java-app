@@ -1,23 +1,25 @@
 package hotel.entity;
 
+import java.util.List;
+
 public class Receptionist extends Employee {
-    public Receptionist(String name,String languagesKnown){
-        super(name);
+
+    private String[] languagesKnown;
+
+    public Receptionist(String name, String id, String sinNumber, String[] languagesKnown){
+        super(name, id, sinNumber);
         this.languagesKnown = languagesKnown;
     }
-
-    private String languagesKnown;
-
-    public String getLanguagesKnown() {
+    public String[] getLanguagesKnown() {
         return languagesKnown;
     }
 
-    public void setLanguagesKnown(String languagesKnown) {
+    public void setLanguagesKnown(String[] languagesKnown) {
         this.languagesKnown = languagesKnown;
     }
 
     @Override
     public void performDuty(){
-        System.out.println("Employee named " + getName() + " knows " + languagesKnown + " languages.");
+        System.out.println("Receptionist " + getName() + " registering the guests.");
     }
 }

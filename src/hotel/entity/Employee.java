@@ -1,6 +1,6 @@
 package hotel.entity;
 
-public class Employee {
+public abstract class Employee {
 
     private String id;
     private String name;
@@ -17,24 +17,14 @@ public class Employee {
         this.gender = gender;
     }
 
-    public Employee(String name){
-        this.name = name;
-    }
-    public Employee(String name, String id){
+    public Employee(String name, String id, String sinNumber){
         this.name = name;
         this.id = id;
-    }
-
-    public void performDuty(){
-        System.out.println(name+ " performing duties");
+        this.sinNumber = sinNumber;
     }
 
     public String getId() {
         return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
     }
 
     public String getName() {
@@ -47,10 +37,6 @@ public class Employee {
 
     public String getSinNumber() {
         return sinNumber;
-    }
-
-    public void setSinNumber(String sinNumber) {
-        this.sinNumber = sinNumber;
     }
 
     public String getAge() {
@@ -68,4 +54,6 @@ public class Employee {
     public void setGender(String gender) {
         this.gender = gender;
     }
+
+    public abstract void performDuty();
 }

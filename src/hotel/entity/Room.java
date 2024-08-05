@@ -1,17 +1,17 @@
 package hotel.entity;
 
 public class Room {
-    private int number;
+    private int roomNumber;
     private String type;
     private boolean status;
     private int price;
 
-    public int getNumber() {
-        return number;
+    public int getRoomNumber() {
+        return roomNumber;
     }
 
-    public void setNumber(int number) {
-        this.number = number;
+    public void setRoomNumber(int roomNumber) {
+        this.roomNumber = roomNumber;
     }
 
     public String getType() {
