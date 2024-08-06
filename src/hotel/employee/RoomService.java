@@ -1,4 +1,4 @@
-package hotel.entity;
+package hotel.employee;
 
 public class RoomService extends Employee {
 

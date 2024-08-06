@@ -1,6 +1,4 @@
-package hotel.entity;
-
-import java.util.List;
+package hotel.employee;
 
 public class Receptionist extends Employee {
 

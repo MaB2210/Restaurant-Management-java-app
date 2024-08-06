@@ -1,4 +1,4 @@
-package hotel.entity;
+package hotel.room;
 
 public class Room {
     private int roomNumber;

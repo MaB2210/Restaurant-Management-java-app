@@ -1,6 +1,6 @@
 package hotel.service;
 
-import hotel.entity.Employee;
+import hotel.employee.Employee;
 
 import java.util.List;
 

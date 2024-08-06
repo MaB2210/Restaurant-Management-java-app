@@ -1,4 +1,4 @@
-package hotel.entity;
+package hotel.hotel;
 
 public class Hotel {
     private String name;

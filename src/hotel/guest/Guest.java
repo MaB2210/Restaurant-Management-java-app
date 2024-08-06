@@ -1,4 +1,4 @@
-package hotel.entity;
+package hotel.guest;
 
 public class Guest {
 

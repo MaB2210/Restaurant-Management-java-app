@@ -1,4 +1,4 @@
-import hotel.entity.Employee;
+import hotel.employee.Employee;
 import hotel.service.DutyService;
 import hotel.service.HireService;
 

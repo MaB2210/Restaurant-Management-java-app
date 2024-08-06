@@ -1,6 +1,6 @@
 package hotel.service;
 
-import hotel.entity.*;
+import hotel.employee.*;
 
 import java.util.ArrayList;
 import java.util.List;

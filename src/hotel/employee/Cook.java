@@ -1,4 +1,4 @@
-package hotel.entity;
+package hotel.employee;
 
 public class Cook extends Employee {
     public Cook (String name, String id, String sinNumber, String cuisine, boolean foodCertification){

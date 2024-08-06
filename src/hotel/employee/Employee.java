@@ -1,4 +1,4 @@
-package hotel.entity;
+package hotel.employee;
 
 public abstract class Employee {
 
