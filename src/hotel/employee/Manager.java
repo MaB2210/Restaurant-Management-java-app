@@ -2,11 +2,13 @@ package hotel.employee;
 
 public class Manager extends Employee{
 
-    public Manager(String name,String id, String sinNumber, String managerPhoneNumber ){
-        super(name, id, sinNumber);
-        this.managerPhoneNumber = managerPhoneNumber;
-    }
+//    public Manager(String name,String id, String sinNumber, String managerPhoneNumber ){
+//        super(name, id, sinNumber);
+//        this.managerPhoneNumber = managerPhoneNumber;
+//    }
+    public Manager(){
 
+    }
     private String managerPhoneNumber;
 
     public String getManagerPhoneNumber() {

@@ -5,7 +5,7 @@ public class Receptionist extends Employee {
     private String[] languagesKnown;
 
     public Receptionist(String name, String id, String sinNumber, String[] languagesKnown){
-        super(name, id, sinNumber);
+        super();
         this.languagesKnown = languagesKnown;
     }
     public String[] getLanguagesKnown() {

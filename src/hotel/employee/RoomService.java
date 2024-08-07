@@ -5,7 +5,7 @@ public class RoomService extends Employee {
     private boolean smartServeCertificate;
 
     public RoomService(String name,String id, String sinNumber, boolean smartServeCertificate){
-        super(name,id, sinNumber);
+        super();
         this.smartServeCertificate = smartServeCertificate;
     }
 

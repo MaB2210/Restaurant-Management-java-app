@@ -1,6 +1,7 @@
 package hotel.service;
 
 import hotel.employee.*;
+import hotel.employee.builder.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +13,9 @@ public class HireService {
       Employee cookEmployee = new Cook("John", "1", "12345", "Korean", true);
       employees.add(cookEmployee);
 
-      Employee managerEmployee = new Manager("Alex", "2", "56787", "1234567890");
+      Employee managerEmployee = new ManagerBuilder()
+              .withName("Rakesh")
+              .build();
       employees.add(managerEmployee);
 
       Employee receptionistEmployee = new Receptionist("Jack", "3", "78979", new String[]{"English", "French"});

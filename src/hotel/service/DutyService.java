@@ -10,5 +10,6 @@ public class DutyService {
         for(Employee emp: employees){
             emp.performDuty();
         }
+        System.out.println(employees.size());
     }
 }
